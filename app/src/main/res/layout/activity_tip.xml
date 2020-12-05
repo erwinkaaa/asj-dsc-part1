@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tip.TipActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_nominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nominal" />
+
+    <RadioGroup
+        android:id="@+id/rg_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_baik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelayanan baik (20%)"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_cukup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelayanan cukup (15%)" />
+
+        <RadioButton
+            android:id="@+id/rb_biasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelayanan biasa (10%)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

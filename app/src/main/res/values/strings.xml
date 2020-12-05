@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ASJ DSC</string>
+    <string name="total_tip">Total Tip : Rp. %s</string>
+</resources>
